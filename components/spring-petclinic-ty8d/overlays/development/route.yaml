@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: spring-petclinic-ty8d
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: spring-petclinic-ty8d
+    app.kubernetes.io/part-of: spring-petclinic
+  name: spring-petclinic-ty8d
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: spring-petclinic-ty8d
+    weight: null
+status: {}

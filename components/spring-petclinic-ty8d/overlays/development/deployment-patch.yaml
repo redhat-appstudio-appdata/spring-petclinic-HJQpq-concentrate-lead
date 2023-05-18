@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: spring-petclinic-ty8d
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-gps-claudiol-tenant/spring-petclinic/spring-petclinic-ty8d@sha256:b071ef6ac1d9f525eb8e4a1707ca10e92a351c1233b395591424cb268abcda35
+        name: my-java-springboot
+        resources: {}
+status: {}
