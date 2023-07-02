@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
     app.kubernetes.io/name: spring-petclinic-ty8d
     app.kubernetes.io/part-of: spring-petclinic
-  name: spring-petclinic-ty8dnlzn
+  name: spring-petclinic-ty8dzfwa
 spec:
   path: /
   port:
