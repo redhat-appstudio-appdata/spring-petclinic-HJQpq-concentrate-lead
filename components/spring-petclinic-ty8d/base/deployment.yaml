@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: spring-petclinic-ty8d
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/rhn-gps-claudiol-tenant/spring-petclinic/spring-petclinic-ty8d@sha256:a6f47ccf65aa424ce7bc81f3a2a77e343b0fc22004d8535caa37e36891331f1b
         name: my-java-springboot
         ports:
         - containerPort: 8081
